@@ -1,16 +1,63 @@
+body{
+  color: #black;
+  background-color: #8befff;
+  font-family: verdana, arial, sans-serif;
+}
+
+.sectionheader{
+  font-family: garamond, arial, serif;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+h3{
+  font-size: 1.25em;
+}
+
+h4{
+  font-size: 1.125em;
+}
+
+.photo{
+  border: solid;
+  border-radius: 50px;
+}
+
 .jumbotron{
   padding:0;
   margin: 0px;
 }
 
 .menu li{
-  display: inline;
+  display: inline-block;
+  padding: 7px;
 }
 
-.menu{
-  text-align: center;
-}
 
 #contact{
   text-align: center;
+  display: block;
+}
+
+
+#contact{
+  border: 2px solid;
+  border-color: black;
+  padding-left: 0px;
+  padding-right: 15px;
+  float:center;
+}
+
+#skills{
+list-style-position: outside;
+width:auto;
+
+}
+
+#education{
+  list-style-position: inside;
+  word-wrap: none;
+  width:auto;
 }
