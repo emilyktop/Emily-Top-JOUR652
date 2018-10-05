@@ -148,3 +148,7 @@ font-size:1.5em;
   font-color:blue;
   font-size:22px;
 }
+
+.bod, .container{
+  width: 80% auto !important;
+}
