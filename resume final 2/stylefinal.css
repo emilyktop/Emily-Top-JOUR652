@@ -1,8 +1,9 @@
 body{
   color: #black;
-  background-color: #8befff;
+  background-color: #white;
   font-family: verdana, arial, sans-serif;
 }
+
 
 .sectionheader{
   font-family: garamond, arial, serif;
@@ -23,11 +24,17 @@ h4{
 .photo{
   border: solid;
   border-radius: 50px;
+  margin-bottom: 20px;
 }
 
 .jumbotron{
   padding:0;
   margin: 0px;
+  margin-bottom: 30px;
+}
+
+#aboutme{
+  padding-left: 10px;
 }
 
 .menu li{
@@ -43,11 +50,20 @@ h4{
 
 
 #contact{
-  border: 2px solid;
-  border-color: black;
   padding-left: 0px;
   padding-right: 15px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   float:center;
+}
+
+
+#contact .photo .containter{
+  background-color: black;
+}
+
+#coninfo{
+  background-color: white;
 }
 
 #skills{
@@ -57,7 +73,27 @@ width:auto;
 }
 
 #education{
-  list-style-position: inside;
-  word-wrap: none;
-  width:auto;
+align: left;
+}
+
+.experience{
+padding: 20px;
+  background-color: #F9EFFF;
+}
+
+.sectionheader h1{
+  align: center;
+}
+
+#about{
+  font-family: garamond, arial, serif;
+  font-size:2em;
+}
+
+.education{
+  background-color:white;
+}
+
+.skills{
+  background-color: #F9EFFF;
 }
