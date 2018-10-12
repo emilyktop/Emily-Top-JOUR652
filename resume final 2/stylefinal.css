@@ -1,30 +1,41 @@
 body{
-  color: #black;
+  color: black;
   background-color: #white;
   font-family: verdana, arial, sans-serif;
 }
 
 
 .sectionheader{
-  font-family: garamond, arial, serif;
+  font-family: 'Marcellus SC', arial, serif;
+  font-color: #584166;
 }
 
 h2{
   font-size: 1.5em;
+  font-color: #584166;
 }
 
 h3{
-  font-size: 1.25em;
+  font-size: 1.125em;
+  font-color: #584166;
 }
 
 h4{
-  font-size: 1.125em;
+  font-size: 1.087em;
+}
+
+h5{font-size: 1em;
+font-weight:light;
 }
 
 .photo{
   border: solid;
   border-radius: 50px;
   margin-bottom: 20px;
+}
+
+#photo{
+  color: #584166;
 }
 
 .jumbotron{
@@ -78,7 +89,7 @@ align: left;
 
 .experience{
 padding: 20px;
-  background-color: #F9EFFF;
+  background-color: #F9EFFF;;
 }
 
 .sectionheader h1{
@@ -86,7 +97,7 @@ padding: 20px;
 }
 
 #about{
-  font-family: garamond, arial, serif;
+  font-family: 'Marcellus SC', arial, serif;
   font-size:2em;
 }
 
@@ -96,4 +107,35 @@ padding: 20px;
 
 .skills{
   background-color: #F9EFFF;
+}
+
+.footer{
+  margin: 0 auto;
+}
+
+.location{
+  font-weight: bold;
+
+}
+
+.title{
+  font-weight:bold;
+}
+
+#experience{
+  margin-bottom: 25px;
+}
+
+blockquote{
+  text-align: center;
+  font-size: 1.1em;
+  font-style:italic;
+}
+
+.education h3{
+  font-weight: bold;
+}
+
+#time p{
+  font-style: italic;
 }
