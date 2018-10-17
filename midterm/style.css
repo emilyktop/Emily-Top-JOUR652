@@ -19,6 +19,7 @@ font-size: 12pt;
   font-size: 12pt;
 }
 
+/* formatting for the first two photos only */
 .photo{
   display: block;
   margin-left: auto;
@@ -34,4 +35,14 @@ font-size: 12pt;
 #content{
   margin: 0 auto;
   width: 900px;
+}
+
+blockquote{
+  font-size:36px;
+  color: #cc0033;
+  text-align: center;
+}
+
+.rname{
+  font-weight: bold;
 }
