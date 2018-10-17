@@ -18,3 +18,20 @@ font-size: 12pt;
   font-family: Georgia;
   font-size: 12pt;
 }
+
+.photo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#map .photo{
+  display: block;
+  text-align: left;
+}
+
+#content{
+  margin: 0 auto;
+  width: 900px;
+}
