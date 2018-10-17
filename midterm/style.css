@@ -1,23 +1,28 @@
 h1{
   font-family: Georgia;
-  font-size: 24pt;
+  font-size: 36px;
 
 }
 
 h2{
   font-family: Georgia;
-  font-size: 18pt;
+  font-size: 24px;
   text-align: center;
+}
+
+h3{
+  font-family: Georgia;
+  font-size: 16px;
 }
 
 p{
 font-family: Helvetica, Arial, sans-serif;
-font-size: 12pt;
+font-size: 12px;
 }
 
 #byline{
   font-family: Georgia;
-  font-size: 12pt;
+  font-size: 12px;
 }
 
 /* formatting for the first two photos only */
