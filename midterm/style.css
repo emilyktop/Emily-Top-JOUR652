@@ -6,7 +6,8 @@ h1{
 
 h2{
   font-family: Georgia;
-  font-size: 14pt;
+  font-size: 18pt;
+  text-align: center;
 }
 
 p{
@@ -45,4 +46,10 @@ blockquote{
 
 .rname{
   font-weight: bold;
+}
+
+#image{
+  font-size: 10px;
+  text-align: center;
+  font-style: italic;
 }
