@@ -60,10 +60,10 @@ p{
 
 .hero-image{
   width: 100%;
-  max-width: 900px;
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
 }
+
 
 .bg-dark {
  background:#000 !important;
