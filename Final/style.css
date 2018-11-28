@@ -1,3 +1,8 @@
+body{
+  
+}
+
+
 #container {
   max-width: 1000px;
   width: 100%;
@@ -45,16 +50,27 @@ h1 {
 h2{
   text-align:left;
   font-family: 'Raleway', sans-serif;
+  color: #0B3351;
 }
 
 h4{
   font-family: 'Raleway', sans-serif;
+  color: #0B3351;
 }
 
 h5{
   font-family: 'Raleway', sans-serif;
+  color: #0B3351;
 }
 
 p{
   text-align:left;
+}
+
+blockquote{
+  font-size: 1.5em;
+  font-family: 'Raleway', sans-serif;
+  color: #840704;
+  margin-left: 200px;
+  margin-right: 200px;
 }
