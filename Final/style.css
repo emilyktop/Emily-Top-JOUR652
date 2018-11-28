@@ -1,0 +1,60 @@
+#container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align:center;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+/* navbar code to be opaque from Erin Manahan */
+
+.centered {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+byline{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body{
+  font-family: Georgia, serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3em;
+}
+
+
+h2{
+  text-align:left;
+  font-family: 'Raleway', sans-serif;
+}
+
+h4{
+  font-family: 'Raleway', sans-serif;
+}
+
+h5{
+  font-family: 'Raleway', sans-serif;
+}
+
+p{
+  text-align:left;
+}

@@ -1,0 +1,276 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Concussions in NHL</title>
+
+  <meta tag="description" content="NHL Concussion Story">
+  <meta tag="author" content="Emily Top">
+
+  <link rel="icon" href="puck2.png">
+
+  <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+
+ <!-- Load our CSS -->
+ <link rel="stylesheet" href="style.css">
+
+ <!-- Load d3.js and c3.js -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <a class="navbar-brand" href="#">Navbar</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+         <a class="nav-link" href="#Title">Home <span class="sr-only">(current)</span></a>
+       </li>
+
+   <li class="nav-item dropdown">
+     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sections
+     </a>
+     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+       <a class="dropdown-item" href="#intro">Introduction</a>
+       <a class="dropdown-item" href="#basic">What is a concussion?</a>
+       <a class="dropdown-item" href="#data">Data</a>
+       <a class="dropdown-item" href="#personal">Personal Accounts </a>
+       <a class="dropdown-item" href="#treatment">Treatment </a>
+       <a class="dropdown-item" href="#consequences">Consequences </a>
+       <a class="dropdown-item" href="#future">Moving Forward </a>
+     </div>
+   </li>
+ </ul>
+</div>
+</nav>
+
+<br>
+<br>
+
+<div class="hero">
+<img src="rink.jpg" width=100% height=675px;>
+  <div class="centered">
+    <h1 id="Title">Concussions in the National Hockey League</h1>
+    <byline>By Emily Top</byline>
+  </div>
+</div> <!-- close hero image-->
+
+
+<div id="container">
+ <br>
+ <br>
+  <p id="intro"> Intro words </p>
+
+  <br>
+
+<h2 id="basic">What is a concussion and how is it diagnosed?</h2>
+  <p> According to the Center of Disease Control, a concussion is “a type of traumatic brain injury (TBI) caused by a bump, blow, or jolt to the head.” Any force that causes the brain to move within the head quickly back and forth can also cause concussions. </p>
+
+  <figure>
+    <img src="concussion.jpg" alt="Descriptive Image of Concussions">
+    <figcaption> How concussions happen-- Credit: Children's Hospital Oakland </figcaption>
+  </figure>
+
+  <p>The CDC states that symptoms of concussions can affect thoughts and memories, physical attributes, emotions and mood, and sleep. People that suffer from concussions typically have difficulty remembering recent events, headaches, difficulty with bright light, irritability, and changes in sleep behavior.</p>
+
+  <p> Medical professionals often utilize the Sports Concussions Assessment Tool for athletes over 13. <a href=https://www.abiireland.ie/wp-content/uploads/2015/10/B22546-Sports-Physician-Concussion-Assessment-Tool-SCAT3.pdf>SCAT3</a> is “a standardized tool for evaluating injured athletes for concussion and can be used in athletes aged from 13 years and older,” according to Acquired Brain Injury Ireland. SCAT3 assesses an injured patient in the following categories: Glasgow Comma Scale, Maddocks Score, Symptom Evaluation, Cognitive Assessment, Neck Examination, Balance Examination, Coordination Examination, Standardized Assessment of Concussion Delayed Recall. </p>
+
+  <p> Physicians can also evaluate the damage using a CT scan of the brain. However, according to UPMC Sports Medicine, 50 percent of concussions go unreported or undetected. </p>
+
+  <figure>
+    <img src="boynton.jpg" alt="Photo of Nick Boynton">
+    <figcaption>Credit: Bruce Bennett Studios/ Getty Images via The Player's Tribune</figcaption>
+  </figure>
+
+<h2 id="data">The Data</h2>
+  <p>As aforementioned, football appears in the discussion of concussions and safety more often in mainstream media. In general, injuries in hockey increased annually by 1.3 percent from 1988 to 2004. As for concussions, in a study completed by Agel … in 2007, they were the 2nd most common injury in Hockey games behind knee injuries and made up 9 percent of in-game injuries during the time period.</p>
+
+  <p> Words to transition</p>
+
+<br>
+  <div class="graphic-container">
+  <h4>Number of NHL Concussions per Season</h4>
+  <p>The number of concussions per year peaked during the time period in the season 2000-2001. </p>
+  <div id="ConcussionsbySeason"></div>
+  <em>Source: Data collected by Canadian Medical Association</em>
+  </div>
+<br>
+
+<p>Words to transition</p>
+<br>
+
+<div class="graphic-container">
+<h4>Which position had the most concussions in the NHL between the 1997-1998 season to 2003-2004 season?</h4>
+<p>Concussions occurred most for players playing forward. Goalies had the fewest number of concussions.</p>
+<div id="ByPosition"></div>
+<em>Source: Data collected by </em>
+</div>
+<br>
+
+<h2 id="personal">Personal Accounts </h2>
+  <p>In the past few years, former National Hockey League players, and other professional players, have come out reporting their experiences with concussions. One of the first to do so was Bryce Salvador, a former defenseman for the St. Louis Blues and New Jersey Devils, in an autobiographical account on The Player’s Tribune. After getting hit in the face with a puck, Salvador explained, “My ears didn’t stop ringing for months, but I finished the rest of the 2009-2010 season.”</p>
+
+  <p>Nick Boynton of the Philadelphia Flyers, a known fighter in the league, said, “I started blacking out after I took a big hit to the head.” His concussion symptoms even led to issues with mental illness. He described his experience, “Whenever things get really bad, and I find myself thinking about death, it’s always in the context of release. Escaping the pain…And even though I definitely wouldn’t say death has been something that I’ve wanted — that I actually wanted to die — at the same time, when I’d hit those low points, it was like ... I didn’t exactly not want it, either.”</p>
+
+  <p>Boynton continued, "<strong>They can scratch my name off [the Stanley Cup]</strong>, and I’d hand my ring back in right now if I could go back and make it so that I wouldn’t have had to experience all this pain and sorrow and anger and sadness.” (emphasis added) </p>
+
+  <p> On The Player's Tribune, former player Daniel Carcillo posted a video of his experiences with concussions after leaving the NHL:</p>
+
+  <div>
+    <object data="https://www.theplayerstribune.com/en-us/videos/daniel-carcillo-head-trauma?jwsource=cl"
+      width="560" height="315"></object>"
+    <figcaption> Credit: Daniel Carcillo via The Player's Tribune </figcaption>
+  </div> <!-- end video div-->
+
+  <br>
+
+<h2 id="treatment">Treatment</h2>
+  <p>Although most concussions will heal themselves by resting and avoiding physically demanding activities, according to the CDC, this protocol does not help all cases, especially players affected by multiple concussions. Also, there is no FDA-approved treatment for acute concussions, according to Smith…</p>
+
+  <p> For Adam Estoclet who played in the Swedish Allsvenskan League, his symptoms were fine for seven games, but afterward, he wrote, “The only issue is, they didn’t know what was going on in my head. My headaches were gradually coming back, and by the end of the eighth game, I could only hold my head in my hands.”</p>
+
+  <p>Boynton and Salvador also expressed difficulties with current treatment. When they saw no results, each player reached out to other doctors that were trying out new treatment types. Estoclet and Salvador both mentioned how their new treatment was a way to restart their brain systems. </p>
+
+  <p>Estoclet said, “And [Dr. Kutcher] promised that he could fix me. Not through rest. But through slowly rehabilitating my brain — by building its systems back up from scratch.”</p>
+
+<div>
+  <iframe src="https://player.vimeo.com/video/157447335" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen" style="height: 495px;"></iframe>
+  <figcaption>Adam Estoclet's Rehabilitation-- Credit: Adam Estoclet via The Player's Tribune</figcaption>
+  <!-- code taken from The Player's Tribune https://www.theplayerstribune.com/en-us/articles/adam-estoclet-hockey-concussion -->
+<div><!-- end video div-->
+<br>
+
+  <p> Salvador described his treatment: “Kids exercise this muscle [the vestibular system] all the time by jumping around, doing tumbles, spinning, and just generally being kids. So in order to re-calibrate my system and build up my muscle, I had to embrace my inner child.”</p>
+
+  <p>Below is one example of the some new treatments that players are undergoing:</p>
+
+  <figure>
+    <img src="boynton-giphy.gif" alt="Gif of New Concussion Treatment">
+    <figcaption>New Concussion Treatment -- Credit: Nick Boynton via The Player's Tribune </figcaption>
+  </figure>
+
+<h2 id="consequences">Consequences</h2>
+  <p>While these players have been lucky enough to work through new treatments, not all NHL players that had been greatly affected by concussions were able to. Some players have committed suicide or while others died of other causers and later were found to have had chronic traumatic encephalopathy, more commonly known as CTE, which can only be diagnosed post-mortem.</p>
+
+<div>
+  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1TeMNl5ZNuxPZtsarmajYMJvqYTRTdC8Rad24AhRohu4&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+</div><!--End Timeline Div-->
+
+<h2 id="future">Moving Forward</h2>
+  <p>The NHL has taken action and has made some changes to the rules in an attempt to reduce the incidences of concussions. </p>
+
+  <p>While the League is working to reduce the problem, a few rule changes do not change the aggressive nature of the sport. Hits still occur; players are still run into the boards; concussions will happen. Without eliminating the sport as a whole, teams could change their diagnostic procedure.</p>
+
+  <p>As aforementioned, 50 percent of concussions go unreported. New procedures have been studied that could change the face of concussion diagnosis. In Smith…, 2016, the following procedures were discussed: the King-Devick Test, Quantified Electroencephalogram evaluation, and assessing neurobiomarkers.</p>
+
+
+
+
+<br>
+
+  <div class="row">
+
+          <div class="col-md-4">
+                  <h5>King-Devick Test</h5>
+                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          </div>
+
+
+          <div class="col-md-4">
+                  <h5>Quantified Electroencephalogram Evaluation</h5>
+                  <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
+          </div>
+
+          <div class="col-md-4">
+                  <h5>Neurobiomarkers</h5>
+                  <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          </div>
+  </div> <!-- close columns-->
+
+
+</div> <!-- end container div-->
+
+<br>
+
+<footer>
+  Copyright Emily Top, 2018
+</footer>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+            // Transition effect for navbar
+            $(window).scroll(function() {
+              // checks if window is scrolled more than 500px, adds/removes solid class
+              if($(this).scrollTop() > 500) {
+                  $('.navbar').addClass('solid');
+              } else {
+                  $('.navbar').removeClass('solid');
+              }
+            });
+    });
+
+  //Chart 1
+   var chart2 = c3.generate({
+        bindto: '#ConcussionsbySeason',
+        data: {
+          columns: [
+            ['1997-1998', 56],
+            ['1998-1999', 88],
+            ['1999-2000', 66],
+            ['2000-2001', 109],
+            ['2001-2002', 96],
+            ['2002-2003', 72],
+            ['2003-2004', 72]
+          ],
+          type: 'bar'
+        },
+        color: {
+          pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
+        }
+      });
+
+  //Chart 2
+          var chart3 = c3.generate({
+          bindto: '#ByPosition',
+          data: {
+            // iris data from R
+            columns: [
+              ['Forwards', 64.1],
+              ['Defenders', 31.4],
+              ['Goalies', 4.5],
+            ],
+            type : 'pie',
+            onclick: function (d, i) { console.log("onclick", d, i); },
+            onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+            onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+          },
+          color: {
+            pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+          }
+        });
+</script>
+
+
+</body>
+
+</html>
