@@ -1,5 +1,5 @@
 body{
-  
+
 }
 
 
@@ -24,14 +24,15 @@ body{
 
 .centered {
     position: absolute;
-    top: 52%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #840704;
 }
 
 byline{
   position: absolute;
-  top: 100%;
+  top: 83%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -73,4 +74,28 @@ blockquote{
   color: #840704;
   margin-left: 200px;
   margin-right: 200px;
+}
+
+.row{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hero p{
+  position:relative;
+  top: 300%;
+  left: 140%;
+  transform: translate(-50%, -50%);
+  font-size: .5em;
+}
+
+.responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  blockquote {
+    margin:0;
+  }
 }
