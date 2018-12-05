@@ -1,5 +1,5 @@
 body{
-
+  background-color: #FCFDFF;
 }
 
 
@@ -98,4 +98,10 @@ blockquote{
   blockquote {
     margin:0;
   }
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+  color: #FCFDFF;
 }
