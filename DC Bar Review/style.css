@@ -1,0 +1,28 @@
+#container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align:center;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+
+h3{
+  text-align: left;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
+p{
+  text-align:left;
+  font-family: 'Inconsolado', sans-serif;
+}
+
+jumbotron{
+  width: 100%;
+  height: 100%;
+}
