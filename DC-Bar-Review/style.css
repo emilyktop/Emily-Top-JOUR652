@@ -5,6 +5,11 @@
   text-align:center;
 }
 
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
 h1 {
   text-align: center;
   font-family: 'Merriweather', serif;
